@@ -1,0 +1,7 @@
+#headerBG {
+    height: 50vh;
+    background-image: url("../assets/Concept\ of\ pizza.jpeg");
+    background-size: contain;
+    opacity: 0.7;
+    color: white;
+}
