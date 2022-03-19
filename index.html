@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza Place</title>
+    <title>My Pizza Place</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,7 +12,7 @@
     <div class="container">
         <!--header-->
             <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand"><strong>Pizza Place</strong></a>
+                <a class="navbar-brand"><strong>My Pizza Place</strong></a>
                 <form class="form-inline">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -35,7 +35,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <h3 id="pizza-form">Place your Pizza Order here:</h3>
+                                    <br><h3 id="pizza-form">Place your Pizza Order here:</h3>
                                     <hr>
                                     <form id="pizza-form"> <!--form start-->
                                         
@@ -91,7 +91,7 @@
                                             </select>
                                         </div>
 
-                                        <button type="submit" class="btn btn-outline-primary">Add Pizza Selection</button>
+                                        <button type="submit" class="btn btn-info">Add Pizza Selection</button>
                                     <br>
                                     </form>
                                 </div>
@@ -100,9 +100,9 @@
                         <br>
                         <br>
                         <!--See your Selection here-->
-                        <div class="col-md-8 hidden" id="orders-div">
-                            <h3>Selection Counter (what you've selected)</h3>
-                            <table class="table table-striped table-danger">
+                        <div class="col-md-8 hidden" id="counter">
+                            <h3>Selection Counter (<span style="color:mediumslateblue;">what you've selected</span></spanwhat>)</h3>
+                            <table id='' class="table table-striped table-primary">
                                 <thead>
                                     <tr>
                                         <th scope="col">Type</th>
@@ -138,13 +138,13 @@
                                         <option value="collect">Pick-up</option>
                                     </select>
                                 </div>
-                                <button type="submit" class="btn btn-outline-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
                         </div>
 
                         <div id="delivery" class="location hidden">
                             <form id="location-form">
-                                <h3>Enter Location</h3>
+                                <h3>Enter Location:</h3>
                                 <div class="form-group">
                                     <label>ADDRESS:</label>
                                     <input type="text" class="form-control" id="ADDRESS" placeholder="e.g, Umoja II Estate, Nairobi" required />
@@ -153,16 +153,16 @@
                                     <label for="house">House Number:</label>
                                     <input type="text" class="form-control" id="house-number" placeholder="House Number" required />
                                 </div>
-                                <button id="cash" type="submit" class="btn btn-outline-primary">Submit</button>
+                                <button id="cash" type="submit" class="btn btn-success">Submit</button>
                             </form>
                         </div>
                         </section>
                         
                         <!-- Footer social and copyright-->
-                        <br><br>
+                        <br><br><hr>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-sm" id="connect">
+                <div class="col-sm" id="social">
                     <img src="./assets/social_icons/twitter.png" alt="Twitter icon">
                     <img src="./assets/social_icons/dribble.png" alt="Dribble icon">
                     <img src="./assets/social_icons/facebook.png" alt="Facebook icon">
@@ -172,10 +172,11 @@
                     <img src="./assets/social_icons/behance.png" alt="Behance icon">
                     <img src="./assets/social_icons/pinterest.png" alt="Pinterest">
                     <img src="./assets/social_icons/flickr.png" alt="Flickre">
+                    
                 </div>
             </div>
                         <div class="footer"> 
-                            <p>My Pizza Place &copy 2022</p>
+                            <br><p>My Pizza Place &copy 2022</p>
                         </div>
                 </div>
             </div>

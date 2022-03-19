@@ -1,7 +1,88 @@
 #headerBG {
     height: 50vh;
-    background-image: url("../assets/Concept\ of\ pizza.jpeg");
+    background-image: url("../assets/headerbg-pizza.jpeg");
     background-size: contain;
     opacity: 0.7;
     color: white;
+}
+
+#intro {
+    background-image: linear-gradient(to right, rgba(62, 161, 0, 0.301) ,rgba(235, 228, 135, 0.299), rgba(55, 0, 255, 0));
+    height: auto;
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+
+.intro1 {
+    border-radius: 10% 10%;
+    width: 50%;
+    height: auto;
+    padding: 3%;
+    margin: auto;
+    margin-top: 5%;
+    background-image: radial-gradient(circle,rgba(235, 160, 204, 0.336),rgba(0, 255, 128, 0.3));
+}
+
+#selection {
+    height: auto;
+    background-color:rgba(212, 250, 137, 0.281);
+}
+
+option {
+    width: 60%;
+    background-color: rgb(78, 50, 235);
+}
+
+select {
+    width: 60%;
+}
+
+.col-md-6 {
+    margin: auto;
+}
+
+#total {width: 40%;
+    background-color: darkorange;
+}
+
+#checkout-form {
+    width: 60%;
+    margin: auto;
+}
+
+#cash { 
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 50%;
+
+}
+
+h3 {
+    text-align: center;
+    color:orangered;
+}
+
+.fed {text-align: center;}
+
+#counter {
+    margin: auto;
+    margin-top: 3%;
+    width: 60%;
+}
+
+#delivery {
+    margin: auto;
+    margin-top: 5%;
+    width: 60%;
+}
+
+#social {
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+.footer {
+    text-align: center;
+    width: 99%;
 }
