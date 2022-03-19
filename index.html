@@ -84,10 +84,35 @@
                                         </div>
 
                                         <button type="submit" class="btn btn-outline-primary">Add Pizza Selection</button>
-                                    
+                                    <br>
                                     </form>
                                 </div>
                             </div>
+                        </div>
+                        <br>
+                        <br>
+                        <!--See your Selection here-->
+                        <div class="col-md-8 hidden" id="orders-div">
+                            <h3>Selection Counter (what you've selected)</h3>
+                            <table class="table table-striped table-danger">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">Crust</th>
+                                        <th scope="col">Topping</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="order-summary"></tbody>
+                            </table>
+                            <p class="delivery-cost hidden">
+                                  <span id="delivery-amount"></span>
+                            </p>
+                            <p class="total-amount hidden">
+                                  <span id="total-amount"></span>
+                            </p>
+                            <br><br>
+                            
                         </div>
                     </section>
                 </div>
