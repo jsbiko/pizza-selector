@@ -135,8 +135,8 @@ $(document).ready(function () {
 
     $("#checkout-form").submit(function (e) {
         e.preventDefault();
-        var name = $("#name").val();
-        var deliveryOption = $("#delivery-option").val();
+        let name = $("#name").val();
+        let deliveryOption = $("#delivery-option").val();
         customerName = name;
         console.log(name);
         console.log(deliveryOption);
@@ -156,6 +156,17 @@ $(document).ready(function () {
       });
 
 
-    
+      $("#location-form").submit(function (e) {
+        e.preventDefault();
+        let estateEntered = $("#ADDRESS").val();
+        let houseNumberEntered = $("#house-number").val();
+        estate = estateEntered;
+        houseNumber = houseNumberEntered;
+        console.log(estate);
+        console.log(houseNumber);
+        $(".location").hide();
+        alert(customerName + ": Your total bill is Ksh. " + totalCost + ". Your order will be delivered to "+ estate + ", " + houseNumber +" in a few minutes." );
+      });
+
     
 });
