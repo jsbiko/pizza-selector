@@ -70,3 +70,20 @@ $(document).ready(function () {
         }
       }
     };
+    let customerName = ""; //options
+    let totalCost = 0;
+    let pizzasOrdered = [];
+    let estate = "";
+    let houseNumber = "";
+    $("#pizza-form").submit(function (e) { //selection variables
+      e.preventDefault();
+      let typeSelected = $("#type").val();
+      let sizeSelected = $("#pizzaSize").val();
+      let toppingSelected = $("#topping").val();
+      let crustSelected = $("#crust").val();
+      let newPizza = new Pizza(
+        typeSelected,
+        sizeSelected,
+        toppingSelected,
+        crustSelected
+      );
