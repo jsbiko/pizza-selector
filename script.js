@@ -165,7 +165,7 @@ $(document).ready(function () {
         console.log(estate);
         console.log(houseNumber);
         $(".location").hide();
-        alert(customerName + ": Your total bill is Ksh. " + totalCost + ". Your order will be delivered to "+ estate + ", " + houseNumber +" in a few minutes." );
+        alert(customerName + ": Your total bill is KES " + totalCost + ". Your order will be delivered to "+ estate + ", " + houseNumber +" in a few minutes." );
       });
 
     
