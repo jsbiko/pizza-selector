@@ -120,7 +120,6 @@ $(document).ready(function () {
           "</td>" +
           "</tr>"
       );
-
       if (pizzasOrdered.length > 0) {
         $("#form-title").empty();
         $("#form-title").append("Add Another Order");
@@ -142,7 +141,7 @@ $(document).ready(function () {
         console.log(deliveryOption);
         $("#name").val("");
         $("#delivery-option").val("");
-       
+        
         if (deliveryOption === "delivery") {
           $(".location").show();
           $(".delivery-cost").show();
@@ -154,8 +153,6 @@ $(document).ready(function () {
           alert(customerName + ": Your total bill is KES " + totalCost + ". Your order will be ready for collection in less than 20 minutes." );
         }
       });
-
-
       $("#location-form").submit(function (e) {
         e.preventDefault();
         let estateEntered = $("#ADDRESS").val();
@@ -167,6 +164,4 @@ $(document).ready(function () {
         $(".location").hide();
         alert(customerName + ": Your total bill is KES " + totalCost + ". Your order will be delivered to "+ estate + ", " + houseNumber +" in a few minutes." );
       });
-
-    
 });
