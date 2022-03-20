@@ -1,6 +1,6 @@
 #headerBG {
     height: 50vh;
-    background-image: url("../assets/headerbg-pizza.jpeg");
+    background-image: url("./assets/headerbg-pizza.jpeg");
     background-size: contain;
     opacity: 0.7;
     color: white;
