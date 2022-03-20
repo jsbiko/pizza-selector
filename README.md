@@ -46,7 +46,7 @@ What you will input include;
 
 ## Installation Guide
 
-Not required. All you have to do is visit the linked Github page link <https://jsbiko.github.io/pizza-selector//>
+Not required. All you have to do is visit the linked Github page link <https://jsbiko.github.io/pizza-selector/>
 
 ## Known Bugs
 
