@@ -87,3 +87,75 @@ $(document).ready(function () {
         toppingSelected,
         crustSelected
       );
+      pizzasOrdered.push(newPizza); //Counter 
+      $("#type").val("");
+      $("#pizzaSize").val("");
+      $("#topping").val("");
+      $("#crust").val("");
+      totalCost = 0;
+      for (let i = 0; i < pizzasOrdered.length; i++) {
+        totalCost += pizzasOrdered[i].getPizzaPrice();
+      }
+      $("#order-summary").append( //counter DOM
+        "<tr>" +
+          '<th scope="row">' +
+          newPizza.type +
+          " (" +
+          newPizza.size +
+          ") - " +
+          newPizza.getTypePrice() +
+          "</th>" +
+          "<td>" +
+          newPizza.topping +
+          " - " +
+          newPizza.getToppingPrice() +
+          "</td>" +
+          "<td>" +
+          newPizza.crust +
+          " - " +
+          newPizza.getCrustPrice() +
+          "</td>" +
+          "<td>" +
+          newPizza.getPizzaPrice() +
+          "</td>" +
+          "</tr>"
+      );
+
+      if (pizzasOrdered.length > 0) {
+        $("#form-title").empty();
+        $("#form-title").append("Add Another Order");
+      }
+      $("#total-amount").fadeIn();
+      $("#checkout").fadeIn();
+      $("#orders-div").fadeIn();
+      $("#total-amount").empty();
+      $("#total-amount").append(totalCost);
+      $(".total-amount").show();
+    });
+
+    $("#checkout-form").submit(function (e) {
+        e.preventDefault();
+        var name = $("#name").val();
+        var deliveryOption = $("#delivery-option").val();
+        customerName = name;
+        console.log(name);
+        console.log(deliveryOption);
+        $("#name").val("");
+        $("#delivery-option").val("");
+       
+        if (deliveryOption === "delivery") {
+          $(".location").show();
+          $(".delivery-cost").show();
+          $("#delivery-amount").append(180);
+          totalCost += 180;
+          $("#total-amount").empty();
+          $("#total-amount").append(totalCost);
+        }else{
+          alert(customerName + ": Your total bill is KES " + totalCost + ". Your order will be ready for collection in less than 20 minutes." );
+        }
+      });
+
+
+    
+    
+});
